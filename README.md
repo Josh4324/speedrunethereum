@@ -2,7 +2,7 @@
 
 Web Link - http://ultra-beginner.surge.sh/
 
-Etherscan link - https://rinkeby.etherscan.io/address/0xCAA2A8B31551Aaed13dea5f8D69eEE0Fa67608df
+Etherscan link - https://rinkeby.etherscan.io/address/0x21086F8a738C484fF27190bE1bFcd8590d299df2
 
 ## 🚩 Challenge 1: 🥩 Decentralized Staking App
 
