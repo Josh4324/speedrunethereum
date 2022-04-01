@@ -1,5 +1,9 @@
 # 🏗 scaffold-eth | 🏰 BuidlGuidl
 
+Web Link - http://innocent-example.surge.sh/
+
+Etherscan Link - https://rinkeby.etherscan.io/address/0xCAA2A8B31551Aaed13dea5f8D69eEE0Fa67608df
+
 ## 🚩 Challenge 0: 🎟 Simple NFT Example 🤓
 
 🎫 Create a simple NFT to learn basics of 🏗 scaffold-eth. You'll use [👷‍♀️ HardHat](https://hardhat.org/getting-started/) to compile and deploy smart contracts. Then, you'll use a template React app full of important Ethereum components and hooks. Finally, you'll deploy an NFT to a public network to share with friends! 🚀
@@ -16,16 +20,18 @@ Want a fresh cloud environment? Click this to open a gitpod workspace, then skip
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/scaffold-eth/scaffold-eth-challenges/tree/challenge-0-simple-nft)
 
-Required: 
-* [Git](https://git-scm.com/downloads)
-* [Node](https://nodejs.org/dist/latest-v16.x/)  (🧨 Use Node v16 or a previous version as v17 may cause errors 🧨)
-* [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable)
+Required:
+
+- [Git](https://git-scm.com/downloads)
+- [Node](https://nodejs.org/dist/latest-v16.x/) (🧨 Use Node v16 or a previous version as v17 may cause errors 🧨)
+- [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable)
 
 (⚠️ Don't install the linux package `yarn` make sure you install yarn with `npm i -g yarn` or even `sudo npm i -g yarn`!)
 
 ```sh
 git clone https://github.com/scaffold-eth/scaffold-eth-challenges.git challenge-0-simple-nft
 ```
+
 ```sh
 cd challenge-0-simple-nft
 git checkout challenge-0-simple-nft
@@ -44,7 +50,7 @@ yarn start
 
 ```sh
 cd challenge-0-simple-nft
-yarn deploy 
+yarn deploy
 ```
 
 > You can `yarn deploy --reset` to deploy a new contract any time.
@@ -53,9 +59,9 @@ yarn deploy
 
 ---
 
-# Checkpoint 1: ⛽️  Gas & Wallets 👛
+# Checkpoint 1: ⛽️ Gas & Wallets 👛
 
-> ⛽️ You'll need to get some funds from the faucet for gas. 
+> ⛽️ You'll need to get some funds from the faucet for gas.
 
 ![image](https://user-images.githubusercontent.com/2653167/142483294-ff4c305c-0f5e-4099-8c7d-11c142cb688c.png)
 
@@ -63,11 +69,9 @@ yarn deploy
 
 ![image](https://user-images.githubusercontent.com/2653167/142484483-1439d925-8cef-4b1a-a4b2-0f022eebc0f6.png)
 
-
 > 🔥 We'll use **burner wallets** on localhost...
 
-
-> 👛 Explore how **burner wallets** work in 🏗 scaffold-eth by opening a new *incognito* window and navigate it to http://localhost:3000. You'll notice it has a new wallet address in the top right. Copy the incognito browsers' address and send localhost test funds to it from your first browser: 
+> 👛 Explore how **burner wallets** work in 🏗 scaffold-eth by opening a new _incognito_ window and navigate it to http://localhost:3000. You'll notice it has a new wallet address in the top right. Copy the incognito browsers' address and send localhost test funds to it from your first browser:
 
 ![image](https://user-images.githubusercontent.com/2653167/142483685-d5c6a153-da93-47fa-8caa-a425edba10c8.png)
 
@@ -75,26 +79,25 @@ yarn deploy
 
 ---
 
-# Checkpoint 2: 🖨 Minting 
+# Checkpoint 2: 🖨 Minting
 
-> ✏️ Mint some NFTs!  Click the `MINT NFT` button in the YourCollectables tab.  
+> ✏️ Mint some NFTs! Click the `MINT NFT` button in the YourCollectables tab.
 
 ![MintNFT](https://user-images.githubusercontent.com/12072395/145692116-bebcb514-e4f0-4492-bd10-11e658abaf75.PNG)
-
 
 👀 You should see your collectibles start to show up:
 
 ![nft3](https://user-images.githubusercontent.com/526558/124386983-48965300-dcb3-11eb-88a7-e88ad6307976.png)
 
-👛 Open an **incognito** window and navigate to http://localhost:3000 
+👛 Open an **incognito** window and navigate to http://localhost:3000
 
 🎟 Transfer an NFT to the incognito window address using the UI:
 
 ![nft5](https://user-images.githubusercontent.com/526558/124387008-58ae3280-dcb3-11eb-920d-07b6118f1ab2.png)
 
-👛 Try to mint an NFT from the incognito window. 
+👛 Try to mint an NFT from the incognito window.
 
-> Can you mint an NFT with no funds in this address?  You might need to grab funds from the faucet to pay the gas!
+> Can you mint an NFT with no funds in this address? You might need to grab funds from the faucet to pay the gas!
 
 🕵🏻‍♂️ Inspect the `Debug Contracts` tab to figure out what address is the `owner` of `YourCollectible`?
 
@@ -118,13 +121,13 @@ yarn deploy
 
 ![nft7](https://user-images.githubusercontent.com/526558/124387064-7d0a0f00-dcb3-11eb-9d0c-195f93547fb9.png)
 
-👛 View your **deployer address** using `yarn account` 
+👛 View your **deployer address** using `yarn account`
 
 ![nft8](https://user-images.githubusercontent.com/526558/124387068-8004ff80-dcb3-11eb-9d0f-43fba2b3b791.png)
 
 ⛽️ Use a faucet like [faucet.paradigm.xyz](https://faucet.paradigm.xyz/) to fund your **deployer address**.
 
-> ⚔️ **Side Quest:** Keep a 🧑‍🎤 [punkwallet.io](https://punkwallet.io/) on your phone's home screen and keep it loaded with testnet eth. 🧙‍♂️ You'll look like a wizard when you can fund your **deployer address** from your phone in seconds. 
+> ⚔️ **Side Quest:** Keep a 🧑‍🎤 [punkwallet.io](https://punkwallet.io/) on your phone's home screen and keep it loaded with testnet eth. 🧙‍♂️ You'll look like a wizard when you can fund your **deployer address** from your phone in seconds.
 
 🚀 Deploy your NFT smart contract:
 
@@ -132,7 +135,7 @@ yarn deploy
 yarn deploy
 ```
 
-> 💬 Hint: You can set the `defaultNetwork` in `hardhat.config.js` to `Rinkeby` OR you can `yarn deploy --network rinkeby`. 
+> 💬 Hint: You can set the `defaultNetwork` in `hardhat.config.js` to `Rinkeby` OR you can `yarn deploy --network rinkeby`.
 
 ---
 
@@ -146,10 +149,9 @@ You should see the correct network in the frontend (http://localhost:3000):
 
 ![nft10](https://user-images.githubusercontent.com/526558/124387099-9a3edd80-dcb3-11eb-9a57-54a7d370589a.png)
 
-🎫 Ready to mint a batch of NFTs for reals?  Use the `MINT NFT` button.
+🎫 Ready to mint a batch of NFTs for reals? Use the `MINT NFT` button.
 
 ![MintNFT2](https://user-images.githubusercontent.com/12072395/145692572-d61c971d-7452-4218-9c66-d675bb78a9dc.PNG)
-
 
 📦 Build your frontend:
 
@@ -158,20 +160,23 @@ yarn build
 ```
 
 💽 Upload your app to surge:
+
 ```sh
 yarn surge
 ```
+
 (You could also `yarn s3` or maybe even `yarn ipfs`?)
 
->  😬 Windows users beware!  You may have to change the surge code in `packages/react-app/package.json` to just `"surge": "surge ./build",`
+> 😬 Windows users beware! You may have to change the surge code in `packages/react-app/package.json` to just `"surge": "surge ./build",`
 
-⚙ If you get a permissions error `yarn surge` again until you get a unique URL, or customize it in the command line. 
+⚙ If you get a permissions error `yarn surge` again until you get a unique URL, or customize it in the command line.
 
 ⚠️ Run the automated testing function to make sure your app passes
 
 ```sh
 yarn test
 ```
+
 ![testOutput](https://user-images.githubusercontent.com/12072395/152587433-8314f0f1-5612-44ae-bedb-4b3292976a9f.PNG)
 
 ---
@@ -197,21 +202,20 @@ Update the `api-key` in `packages/hardhat/package.json` file. You can get your k
 # ⚔️ Side Quests
 
 ## 🐟 Open Sea
-> Add your contract to OpenSea
-> 1. hover over your profile photo in the top right and navigate to `Collections` or go to `https://opensea.io/collections`
-> ![my_collections](https://user-images.githubusercontent.com/46639943/150223014-92a2e32d-d2a2-4fd4-ac3b-bd2d0fcb5840.png)
-> 2. click the vertical elipsis and select `Import an existing smart contract`
-> ![import_contract](https://user-images.githubusercontent.com/46639943/150225448-815a17c1-4ea6-4663-8aff-8f757bebbb54.png)
-> 3. select `Live on a testnet`
-> ![live_on_testnet](https://user-images.githubusercontent.com/46639943/150229334-038100bb-22e0-4240-a293-c2b88adc1219.png)
-> 4. be sure you're on the same network you deployed to and enter your contract address!
-> ![contract_address](https://user-images.githubusercontent.com/46639943/150229361-e50e8c57-3918-450f-8bee-29cf42d65b52.png)
 
+> Add your contract to OpenSea
+>
+> 1. hover over your profile photo in the top right and navigate to `Collections` or go to `https://opensea.io/collections` > ![my_collections](https://user-images.githubusercontent.com/46639943/150223014-92a2e32d-d2a2-4fd4-ac3b-bd2d0fcb5840.png)
+> 2. click the vertical elipsis and select `Import an existing smart contract` > ![import_contract](https://user-images.githubusercontent.com/46639943/150225448-815a17c1-4ea6-4663-8aff-8f757bebbb54.png)
+> 3. select `Live on a testnet` > ![live_on_testnet](https://user-images.githubusercontent.com/46639943/150229334-038100bb-22e0-4240-a293-c2b88adc1219.png)
+> 4. be sure you're on the same network you deployed to and enter your contract address!
+>    ![contract_address](https://user-images.githubusercontent.com/46639943/150229361-e50e8c57-3918-450f-8bee-29cf42d65b52.png)
 
 (It can take a while before they show up, but here is an example:)
 https://testnets.opensea.io/assets/0xc2839329166d3d004aaedb94dde4173651babccf/1
 
 ## 🔶 Infura
+
 > You will need to get a key from infura.io and paste it into constants.js in packages/react-app/src:
 
 ![nft13](https://user-images.githubusercontent.com/526558/124387174-d83c0180-dcb3-11eb-989e-d58ba15d26db.png)
